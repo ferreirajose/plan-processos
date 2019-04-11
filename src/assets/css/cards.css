@@ -1,0 +1,64 @@
+/* Cards */
+
+.box-inline {
+    display: inline-flex;
+    line-height: 15px;
+    margin-right: 15px;
+}
+
+.box-top .fa {
+    margin-right: 5px;
+}
+
+.box.box-solid{
+    border-radius: 0;
+}
+
+.box-body.box-cards {
+    padding: 26px 24px;
+}
+
+.media-body {
+    vertical-align: middle;
+}
+
+.media-body:nth-child(2) {
+    border-color: #E7E7E7;
+    border-style: solid;
+    border-width: 0 1px 0 1px;
+    text-align: center;
+}
+
+.media-body:last-child {
+    padding-left: 30px;
+}
+
+.tag {
+    margin-left: 5px;
+}
+
+.tag .label {
+    border-radius: 0;
+}
+
+.text-middle {
+    margin-left: 5px;
+}
+
+.color-numero {
+    color: #808080;
+}
+.bookmarks {
+    height: 15px;
+    background: url('../images/bookmarks.svg') no-repeat center center;
+}
+
+.folder-open-o {
+    width: 15px;
+    height: 15px;
+    background: url('../images/folder.svg') no-repeat center center;
+}
+
+.rotatio-left {
+    transform: rotate(90deg);
+}

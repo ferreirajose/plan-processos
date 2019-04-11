@@ -1,0 +1,134 @@
+.skin-blue .main-header .navbar {
+    background-color: #0063B1;
+}
+
+.skin-blue .main-header .logo {
+    background-color: #0063B1;
+}
+
+.skin-blue .wrapper,
+.skin-blue .main-sidebar,
+.skin-blue .left-side {
+    background-color: #F4F4F4;
+}
+
+.main-header .logo {
+    text-align: left;
+}
+
+.input-group {
+    background: #F9F9F9
+}
+
+.input-search {
+    background: none;
+    border: none;
+}
+
+.btn-flat {
+    background: none;
+}
+
+.skin-blue .sidebar-menu>li:hover>a,
+.skin-blue .sidebar-menu>li.active>a {
+    color: #808080;
+    background: #EAEAEA;
+}
+
+.skin-blue .sidebar a {
+    color: #808080;
+}
+
+.dropdown-toggle.dropdown-admin-image {
+    background: #FFF;
+    border-radius: 50%;
+    padding: 6px 8px;
+    margin-top: 8px;
+    margin-right: 30px;
+}
+
+.admin-image {
+    float: none;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+}
+
+.sidebar ul:not(.treeview-menu)>li:last-child {
+    border-top: 2px solid #EAEAEA;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-weight: bold;
+}
+
+.sidebar-menu .total-processos {
+    margin-right: 22px;
+}
+
+.skin-blue .sidebar-menu>li>.treeview-menu{
+    background: none;
+}
+
+.skin-blue .treeview-menu>li>a{
+    color: #808080;
+}
+
+.input-group-custom {
+    background: #F4F4F4;
+}
+
+.input-group-sm > .input-custom {
+    background: none;
+    border: 1px solid #0063B1;
+    border-radius: 0;
+    height: 35px;
+}
+
+.sidebar-menu>li>a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.tag-outline {
+    float: left;
+    min-width: 20px;
+    height: 20px;
+    background: url('../images/tag.svg') no-repeat center center;
+    transform: rotate(-90deg);
+    margin-right: 7px;
+}
+
+.check {
+    min-width: 20px;
+    height: 20px;
+    background: url('../images/check.svg') no-repeat center center;
+    background-size: 80%;
+    color: #0063B1;
+}
+
+
+.tarja {
+    display: block;
+    font-size: 0;
+}
+
+.content-wrapper {
+    background-color: #EAEAEA;
+}
+
+.main-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.content {
+    padding-top: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.mr {
+    margin-right: 5px;
+}
