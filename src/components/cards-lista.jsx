@@ -15,8 +15,6 @@ class CardsLista extends Component {
     this.state = { cards: [], produto: '', tags: [], tarja: [], usuario: [] };
     this.renderCards = this.renderCards.bind(this);
     this.listeningMessages = this.listeningMessages.bind(this);
-    this.newCard = [];
-
   }
 
   componentWillMount(){

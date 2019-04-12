@@ -35,6 +35,10 @@
     background: #EAEAEA;
 }
 
+.skin-blue .treeview-menu>li>a:hover{
+    color: #808080;
+}
+
 .skin-blue .sidebar a {
     color: #808080;
 }

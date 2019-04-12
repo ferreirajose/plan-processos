@@ -6,7 +6,8 @@ class MenuItem extends Component {
     super(props);
     
     this.icon = this.props.icon || this.props.iconCustom;
-    this.total = this.props.total || 0; 
+    this.total = this.props.total || 1; 
+    this.bg = this.props.bg || ''; 
   
   }
 
@@ -26,14 +27,16 @@ class MenuItem extends Component {
   }  
 
   render() {
+    
     return (
       <li>
         { this.props.input ? (this.createInput()) : ('')}
 
         <a href={this.props.path} className={ this.props.input ? ('hide'): ''} onClick={this.props.handleClick}>
-          { this.props.tag ? (<small className="label bg-success">Justiça Gratuita</small>): ('') }  
-          { this.icon ? ( <i className={`fa ${this.props.icon || this.props.iconCustom}`} /> ) : ('') }
-          { this.props.label} { this.total ? (<span className="pull-right total-processos">{this.total}</span>) : ('') }
+          { this.bg ? (<small style={{background: this.bg}} className="label-custom">Justiça Gratuita</small>): ('') }  
+          { this.icon ? ( <i className={`fa ${this.icon || this.props.iconCustom}`} /> ) : ('') }
+          <span>{ this.props.label }</span>
+          { this.total ? (<span className="pull-right total-processos">{this.total}</span>) : ('') }
         </a>
       </li>
     );
