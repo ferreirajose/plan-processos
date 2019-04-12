@@ -1,12 +1,16 @@
+
 {
   "name": "plan-processos",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "admin-lte": "2.3.6",
+    "ionicons": "^4.5.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8",
-    "admin-lte": "2.4.10"
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,6 +29,8 @@
   ],
   "devDependencies": {
     "axios": "^0.18.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
     "react-redux": "^7.0.1",
     "redux": "^4.0.1",
     "redux-devtools": "^3.5.0",
