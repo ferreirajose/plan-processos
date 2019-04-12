@@ -13,7 +13,7 @@ const Header = props => {
           <ul className="nav navbar-nav">
             <li className="dropdown user user-menu">
               <button className="btn dropdown-toggle dropdown-admin-image" data-toggle="dropdown" aria-expanded="false">
-                <img src={user} className="admin-image" alt="User Image" />
+                <img src={user} className="admin-image" alt="User" />
               </button>
             </li>
           </ul>

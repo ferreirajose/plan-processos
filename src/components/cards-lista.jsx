@@ -27,8 +27,8 @@ class CardsLista extends Component {
   };
 
   renderCards() {
-    const { cards } = this.state;
-
+    const { cards, tags } = this.state;
+    
     const listaCards = cards.map((data, idx) => {
       return (
         <div className="box box-solid" key={data.id || idx}>
@@ -36,7 +36,7 @@ class CardsLista extends Component {
             <div className="media">
               <CardsBodyInfo cards={data} />
               <CardsBodyMiddle iconCustom="folder-open-o" />
-              <CardsBodyTag iconCustom="tag-outline" />
+              <CardsBodyTag tagsCards={data.tag} tags={tags} iconCustom="tag-outline" />
             </div>
           </div>
         </div>

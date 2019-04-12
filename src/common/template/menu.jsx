@@ -52,23 +52,22 @@ class Menu extends Component {
   }
 
   render() {
-      console.log(this.state.tags)
     return (
       <ul className="sidebar-menu tree" data-widget="tree">
-        <MenuItem path="#" label="Processo" />
-        <MenuItem path="#cards" label="Todos os Processo" iconCustom="bookmarks" />
-        <MenuTree label="Etiquetas">
+        <MenuItem path={`#`} label="Processo" />
+        <MenuItem path="/cards" label="Todos os Processo" iconCustom="bookmarks" />
+        <MenuTree path={`#`} label="Etiquetas">
           {
             this.state.tags.map((item, idx) => <MenuItem key={idx} path="#" bg={item.background} label={item.name} />)
           }
         </MenuTree>
-        <MenuItem path="#" label="Criar Etiqueta" iconCustom="tag-outline" 
+        <MenuItem path={`#`} label="Criar Etiqueta" iconCustom="tag-outline" 
           text={this.state.text} 
           input={this.state.input}
           handleChange={this.handleChange}
           handleAdd={this.handleAdd}
           handleClick={this.handleClick} />
-        <MenuItem path="#" label="Feitos" />
+        <MenuItem path={`#`} label="Feitos" />
       </ul>
     );
   }

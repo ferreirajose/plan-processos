@@ -2,17 +2,35 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Baixar Projeto 
 
-### `npm start`
+```
+git clone https://github.com/ferreirajose/plan-processos.git
+```
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instalando dependências do projeto
+Acesso o diretorio plan-processos
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```
+$ cd plan-processos
+```
+
+Execute o comando abaixo para instalar as dependências do projeto. 
+
+```
+ $ npm install
+```
+
+## Executando o projeto
+
+```
+ $ npm start
+```
+
+## Visualizando o projeto
+
+Acesse a URL [http://localhost:3000](http://localhost:3000)
 
 ### `npm test`
 

@@ -6,7 +6,7 @@ class MenuItem extends Component {
     super(props);
     
     this.icon = this.props.icon || this.props.iconCustom;
-    this.total = this.props.total || 1; 
+    this.total = this.props.total || 0; 
     this.bg = this.props.bg || ''; 
   
   }
@@ -33,7 +33,7 @@ class MenuItem extends Component {
         { this.props.input ? (this.createInput()) : ('')}
 
         <a href={this.props.path} className={ this.props.input ? ('hide'): ''} onClick={this.props.handleClick}>
-          { this.bg ? (<small style={{background: this.bg}} className="label-custom">Justiça Gratuita</small>): ('') }  
+          { this.bg ? (<small style={{background: this.bg}} className="label-custom"></small>): ('') }  
           { this.icon ? ( <i className={`fa ${this.icon || this.props.iconCustom}`} /> ) : ('') }
           <span>{ this.props.label }</span>
           { this.total ? (<span className="pull-right total-processos">{this.total}</span>) : ('') }
