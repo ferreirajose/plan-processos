@@ -1,15 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { applyMiddleware, createStore } from 'redux';
-import { Provider } from 'react-redux';
-
-import promise from 'redux-promise';
-import multi from 'redux-multi';
-import thunk from 'redux-thunk';
-
 import './index.css';
-import App from './App';
+// import App from './App';
+import App from './main/app';
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
