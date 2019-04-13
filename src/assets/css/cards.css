@@ -29,12 +29,22 @@
     text-align: center;
 }
 
+.media, .media-body {
+    overflow: visible;
+}
+
 .media-body:last-child {
     padding-left: 30px;
 }
 
+.relative {
+    display: block;
+    position: relative;
+}
+
 .tag {
-    margin-left: 5px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .tag .label {

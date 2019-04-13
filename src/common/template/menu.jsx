@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import PubSub from 'pubsub-js';
 
 import MenuItem from './menu-item';
-import MenuTree from './menu-tree';
 
 class Menu extends Component {
 
@@ -27,8 +26,8 @@ class Menu extends Component {
   }
 
   listeningMessages(channel, data) {
-    const { tags } = data;
-    this.setState({tags})
+    const { tags, cards } = data;
+    this.setState({tags, cards})
   };
 
   handleClick() {
@@ -44,23 +43,23 @@ class Menu extends Component {
     this.setState({
       input: false,
       text: '',
-      tags: [ ...this.state.tags, {
-        'name': this.state.text
-      }],
+      tags: [ ...this.state.tags, { 'name': this.state.text }],
     });
 
   }
 
-  render() {
+  render() {  
+    const total = this.state.cards.length;
+
     return (
       <ul className="sidebar-menu tree" data-widget="tree">
         <MenuItem path={`#`} label="Processo" />
-        <MenuItem path="/cards" label="Todos os Processo" iconCustom="bookmarks" />
-        <MenuTree path={`#`} label="Etiquetas">
+        <MenuItem path="/cards" active="active" total={total} label="Todos os Processo" iconCustom="bookmarks" />
+        <MenuItem path={`#`} label="Etiquetas" active="active">
           {
             this.state.tags.map((item, idx) => <MenuItem key={idx} path="#" bg={item.background} label={item.name} />)
           }
-        </MenuTree>
+        </MenuItem>
         <MenuItem path={`#`} label="Criar Etiqueta" iconCustom="tag-outline" 
           text={this.state.text} 
           input={this.state.input}

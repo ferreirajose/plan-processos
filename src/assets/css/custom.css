@@ -51,6 +51,10 @@
     margin-right: 30px;
 }
 
+.skin-blue .sidebar-menu>li:nth-child(3n) a {
+    background: none;
+    border: none;
+}
 .admin-image {
     float: none;
     width: 16px;

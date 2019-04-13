@@ -5,8 +5,7 @@ class MenuItem extends Component {
   constructor(props) {
     super(props);
     
-    this.icon = this.props.icon || this.props.iconCustom;
-    this.total = this.props.total || 0; 
+    this.icon = this.props.icon || this.props.iconCustom; 
     this.bg = this.props.bg || ''; 
   
   }
@@ -27,17 +26,22 @@ class MenuItem extends Component {
   }  
 
   render() {
+    const total = this.props.total;
+    const active = this.props.active;
     
     return (
-      <li>
+      <li className={`treeview ${active}`}>
         { this.props.input ? (this.createInput()) : ('')}
 
         <a href={this.props.path} className={ this.props.input ? ('hide'): ''} onClick={this.props.handleClick}>
           { this.bg ? (<small style={{background: this.bg}} className="label-custom"></small>): ('') }  
           { this.icon ? ( <i className={`fa ${this.icon || this.props.iconCustom}`} /> ) : ('') }
           <span>{ this.props.label }</span>
-          { this.total ? (<span className="pull-right total-processos">{this.total}</span>) : ('') }
+          { total ? (<span className="pull-right total-processos">{total}</span>) : ('') }
         </a>
+        <ul className='treeview-menu'>
+            { this.props.children}
+        </ul>
       </li>
     );
   }
