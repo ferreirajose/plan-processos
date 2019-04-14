@@ -14,9 +14,8 @@ class Search extends Component {
   }
 
   componentWillMount() {
-    //const URI = 'http://www.mocky.io/v2/5ca8e4f73700009003492df6';
-    const URI = 'http://localhost:8888/api/V1/plan/processos';
-
+    const URI = 'http://www.mocky.io/v2/5ca8e4f73700009003492df6';
+  
     axios.get(URI)
       .then(res => {
         this.setState(res.data);

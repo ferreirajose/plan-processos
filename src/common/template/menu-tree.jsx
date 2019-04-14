@@ -9,9 +9,9 @@ const MenuTree = (props) => {
                 {icon ? <i className={`fa ${props.icon || props.iconCustom}`} aria-hidden="true" /> : ''} <span>{props.label}</span>
             </a>
             <ul className='treeview-menu'>
-                { props.children}
+                {props.children}
             </ul>
-        </li>        
+        </li>
     )
 }
 
